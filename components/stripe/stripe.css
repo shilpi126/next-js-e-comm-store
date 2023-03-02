@@ -1,0 +1,132 @@
+.stripe-container{
+    background-color: rgb(253, 179, 43);
+    height: 4.5rem;
+    width: 100%;
+    /* margin-top: 0;
+    padding-top: 0; */
+    margin-top: -20px;
+    padding-top: 0.1px;
+    
+}
+
+
+.all-categories-title{
+    display: flex;
+    background-color: white;
+    height: 4.1rem;
+    width: 20rem;
+    margin-left: 5rem;
+    border-top-left-radius:  5px;
+    border-top-right-radius: 5px;
+    margin-top: 6px;
+    /* border: 1px solid red; */
+
+}
+
+.all-categories{
+    display: flex;
+    
+    height: 3.5rem;
+    width: 20rem;
+    margin-left: 40px;
+    border-radius: 5px;
+    
+    margin-top: 10px;
+    
+}
+
+.cate{
+    background-color:white;
+    height: 50rem;
+    width: 20rem;
+    margin-left: 25px;
+    z-index: 2;
+    margin-left: -1px;
+    margin-top: -15px;
+    transition: ease-out;
+    
+   
+
+}
+
+.cate-text{
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 5px;
+    list-style-type: none;
+    
+}
+
+
+.list-items{
+    display: flex;
+    /* padding-left: 20rem; */
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    list-style-type: none;
+    margin-top: -50px;
+    margin-left: 25rem;
+    /* padding-top: -40px; */
+    
+
+    
+}
+
+
+
+.list-items>li{
+    padding-left: 30px;
+    
+}
+
+
+
+.bars3icon{
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+    padding-right: 15px;
+    padding-top: 18px;
+}
+
+.all{
+    
+    padding-top: 20px;
+    padding-right: 20px;
+
+}
+
+.downicon{
+    height: 15px;
+    width:15px;
+    margin-left: 10px;
+    padding-left: 100px;
+    padding-top: 18px;
+}
+
+.details{
+    margin-top: -90px;
+}
+
+.stripe-btn{
+    height: 45px;
+    width: 12rem;
+    background-color: black;
+    color: white;
+    margin-left: 12rem;
+    margin-top: -98px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+

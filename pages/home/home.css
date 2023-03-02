@@ -1,0 +1,172 @@
+.brand{
+    margin-left: 70px;
+    margin-right: 70px;
+ 
+    height: 25rem;
+    width: 90%;
+   
+}
+
+.brand-img{
+    height: 80%;
+    width: 100%;
+   
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.img{
+    height:50% ;
+    width: 210px;
+    background-color: white;
+   
+    margin-top: 0;
+    margin-right: 3px;
+    margin-bottom: 2px;
+    
+}
+
+.brandimg{
+    height: 50px;
+    width: 150px;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+
+.sale-cont{
+    height: 35rem;
+  
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    margin-top: 30px;
+}
+
+.saleimg{
+    height: 100%;
+    width: 48%;
+ 
+}
+
+.i1{
+    margin-right: 50px;
+}
+
+
+
+
+
+.saller{
+    height: 15rem;
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 70px;
+    
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    
+
+}
+
+.saller-item{
+  
+    height: 200px;
+    width: 200px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    
+    align-items: center;
+    border-radius: 50%;
+    
+
+
+   
+}
+
+.sl{
+    height: 100px;
+    width: 100px;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+
+
+}
+
+
+.saller-item>p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+.ads{
+    min-height: 10rem;
+    width: 90%;
+    margin-left: 70px;
+    margin-right: 70px;
+  
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.ad1{
+    height: 100%;
+    width: 48%;
+    margin-right: 40px;
+   
+   
+}
+
+.ad2{
+    height: 100%;
+    width: 48%;
+    /* margin-left: 30px; */
+   
+   
+}
+
+
+/* email container */
+
+.email-cont{
+    width: 90%;
+    height: 15rem;
+    margin-left: 70px;
+    margin-right: 70px;
+    background-color: rgb(14, 180, 180);
+}
+
+.email-cont>h1{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.email-item{
+    height: 3rem;
+    width: 40rem;
+    background-color: chartreuse;
+    margin-left: 20rem;
+    display: flex;
+}
+
+.email-item>input{
+    height: 95%;
+    width: 80%;
+    outline: 0;
+    
+}
+
+.email-btn{
+    height: 100%;
+    width: 20%;
+    background-color: darkorange;
+}
+
+

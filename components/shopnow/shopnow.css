@@ -1,0 +1,40 @@
+.shopnow-container{
+    height: 42rem;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    margin: 70px;
+}
+
+.singleimg{
+    height: 100%;
+    width: 70%;
+    
+    
+}
+.img1{
+    height: 100%;
+    width: 100%;
+    /* margin-right: 5rem; */
+} 
+
+.doubleimg{
+    height: 100%;
+    width: 40%;
+    /* background-color: chocolate; */
+    margin-left: 3rem;
+    /* padding-left: 5rem; */
+    
+} 
+
+.img2{
+    height: 48%;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.img3{
+    height: 48%;
+    width: 100%;
+    margin-top: 12px;
+}

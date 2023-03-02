@@ -1,0 +1,41 @@
+.stripe2-container{
+    height: 7rem;
+    width: 90%;
+    background-color: white;
+    display: flex;
+    margin: 70px;
+    /* margin-right: 70px;
+    margin-bottom: 50px; */
+}
+
+.cont{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    
+
+}
+
+.cont>.text{
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.stripe2-icon{
+    height: 3rem;
+    width: 3rem;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: goldenrod ;
+}
+
+.text1{
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text2{
+    color: darkgray;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
