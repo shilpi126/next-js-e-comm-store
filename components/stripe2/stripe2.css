@@ -1,18 +1,20 @@
 .stripe2-container{
-    height: 7rem;
-    width: 90%;
+    height: 8rem;
+    width: 92%;
     background-color: white;
     display: flex;
-    margin: 70px;
-    /* margin-right: 70px;
-    margin-bottom: 50px; */
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+  
 }
 
 .cont{
     width: 25%;
     height: 100%;
     display: flex;
-    
+    background-color: white;
 
 }
 
@@ -38,4 +40,24 @@
 .text2{
     color: darkgray;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+
+@media (max-width: 1024px){
+    .stripe2-container{
+       display: block;
+      width: 100%;
+      
+      margin-top: -15rem;
+      margin-left: -1px;
+      margin-bottom: 25rem;
+     
+    }
+
+    .cont{
+        width: 100%;
+        
+    }
 }

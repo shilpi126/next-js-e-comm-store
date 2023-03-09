@@ -5,38 +5,29 @@ import "../components/stripe/stripe.css"
 import "../components/shopnow/shopnow.css"
 import "../components/stripe2/stripe2.css"
 import "../components/gamerworld/gamer.css"
-import "./home/home.css"
-import "../components/gamer2/gamer2.css"
+import "../components/bestsaller/bestsaller.css"
+import "../components/newarrival/new.css"
 import "../components/populersale/populer.css"
+import "../components/populersale2/populersale2.css"
 import "../components/topsalling/topsalling.css"
-import "./products/allproduct.css"
-import Cart from "./cart/Cart"
-import HomePage from "../pages/home/HomePage";
-import AllProduct from "./products/AllProduct"
-import CheckOut from "./checkout/CheckOut"
-import Navbar from "@/components/navbar/Navbar"
-import SearchBar from "@/components/searchbar/SearchBar"
-import Stripe from "@/components/stripe/Stripe"
+import "./allproduct/allproduct.css"
+import "../components/footer/footer.css"
+import "../components/productsfeed/productsfeed.css"
 //import {store} from './store'
+import "../components/shopbybrand/brand.css"
+import { store } from "@/app/store"
+import { Provider } from "react-redux"
+import "../pages/cart/cart.css"
+import "../pages/checkout/checkout.css"
 
-export default function App() {
+//import '@/styles/globals.css'
+
+export default function App({ Component, pageProps }) {
+
   return (
-    
-    <>
-    <Navbar/>
-    <SearchBar/>
-    <Stripe/>
-
-    
-    {/* <HomePage/> */}
-    {/* <AllProduct style={{backgroundColor:"red"}}/> */}
-    {/* <CheckOut/> */}
-    
-    </>
-
-      
-      
-  
+    <Provider store={store}>
+    <Component {...pageProps} />
+    </Provider>
   )
-  
+ 
 }

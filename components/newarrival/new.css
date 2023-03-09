@@ -1,21 +1,26 @@
-.card-container{
+.newarrival-main{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 4rem;
+}
+
+.newarrival-container{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 90%;
-    margin-left: 70px;
-    margin-right: 70px;
+    width: 100%;
+ 
    
-}
+} 
 
-.card{
+.newarrival-card{
     height: 450px;
     width:250px;
     background-color: white;
     margin-bottom: 40px;
     margin-right: 20px;
 }
-.image{
+.newarrival-image{
     height: 250px;
     width: 200px;
     margin-left: 25px;
@@ -24,7 +29,7 @@
    
 }
 
-.rate{
+.newarrival-rate{
     font-size: 25px;
     margin-left: 20px;
     margin-bottom: 10px;
@@ -51,13 +56,13 @@ h4{
     margin-top: -20px;
 }
 
-.info{
+.newarrival-info{
     margin-bottom: -10px;
     width: 200px;
     /* height: 20px; */
 }
 
-.add{
+.newarrival-add{
    
     background-color: rgb(253, 179, 43);
     height: 2.5rem;
@@ -65,4 +70,8 @@ h4{
     margin-left: 40px;
     margin-top: -10px;
   
+} 
+
+.ad4{
+    width: 100%;
 }

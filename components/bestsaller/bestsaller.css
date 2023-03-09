@@ -1,38 +1,3 @@
-.brand{
-    margin-left: 70px;
-    margin-right: 70px;
- 
-    height: 25rem;
-    width: 90%;
-   
-}
-
-.brand-img{
-    height: 80%;
-    width: 100%;
-   
-    display: flex;
-    flex-wrap: wrap;
-   
-}
-.img{
-    height:50% ;
-    width: 210px;
-    background-color: white;
-   
-    margin-top: 0;
-    margin-right: 3px;
-    margin-bottom: 2px;
-    
-}
-
-.brandimg{
-    height: 50px;
-    width: 150px;
-    margin-top: 3rem;
-    margin-left: 2rem;
-}
-
 .sale-cont{
     height: 35rem;
   
@@ -40,7 +5,7 @@
     margin-left: 70px;
     margin-right: 70px;
     display: flex;
-    margin-top: 30px;
+   
 }
 
 .saleimg{
@@ -63,7 +28,7 @@
     margin-left: 70px;
     margin-right: 70px;
     
-    margin-top: 40px;
+   
     display: flex;
     justify-content: space-between;
     
@@ -131,42 +96,3 @@
    
    
 }
-
-
-/* email container */
-
-.email-cont{
-    width: 90%;
-    height: 15rem;
-    margin-left: 70px;
-    margin-right: 70px;
-    background-color: rgb(14, 180, 180);
-}
-
-.email-cont>h1{
-    text-align: center;
-    padding-top: 30px;
-}
-
-.email-item{
-    height: 3rem;
-    width: 40rem;
-    background-color: chartreuse;
-    margin-left: 20rem;
-    display: flex;
-}
-
-.email-item>input{
-    height: 95%;
-    width: 80%;
-    outline: 0;
-    
-}
-
-.email-btn{
-    height: 100%;
-    width: 20%;
-    background-color: darkorange;
-}
-
-

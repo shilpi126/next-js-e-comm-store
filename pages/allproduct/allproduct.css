@@ -1,6 +1,10 @@
 .all-prod{
     text-align: center;
     font-size: 100px;
+
+    position: absolute;
+    z-index: 2;
+    background-color: white;
 }
 
 .getall-card-container{

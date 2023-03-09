@@ -12,17 +12,30 @@ import {ChevronDownIcon} from '@heroicons/react/24/outline'
 import { display } from '@mui/system';
 import { valueToPercent } from '@mui/base';
 import Link from 'next/link';
-import Cart from '@/pages/cart/Cart';
-import AllProduct from '@/pages/products/AllProduct';
+
+import Allproduct from '@/pages/allproduct/allproduct';
+import { useRouter } from 'next/router';
+import { selectItems } from '@/slices/cart-slice';
+import { useDispatch, useSelector } from 'react-redux';
+//import { fetchAllCategories } from '@/slices/categories-slice';
 
 
 
 export default function SearchBar() {
     
     const [open, setOpen] = useState(false);
-    
+    const [searchTerm, setSearchTerm] = useState(" ")
     const [filterData, setFilterData] = useState([])
     const [products, setProducts] = useState([])
+    //const [selectedCategory, setSelectedCategory] = useState(" ")
+    const router = useRouter();
+    //this is pull the items from global store;
+    const items = useSelector(selectItems);
+    //console.log(items);
+
+    //const categories =  useSelector((state) => state.categories.value);
+     const dispatch = useDispatch();
+
 
 
 
@@ -33,28 +46,47 @@ useEffect(() => {
     const data = await response.json();
     // console.log(data.products);
     setProducts(data.products)
+  
     }
     callApi();
-    
-}, []);
+    }, []);
 
-// console.log(products);
+
+
+const handleProdFilter = (e) => {
+  
+    setSearchTerm(e.target.value);
+    const newFilter = products.filter((product) => {
+        return(
+        
+            product.title.toLowerCase().includes(searchTerm.toLowerCase())
+
+        )
+    });
+    setFilterData(newFilter);
+}  
 
 
 const handleCateFilter = (e) => {
    
-
-    const searchWord = e.target.value;
+    setSearchTerm(e.target.value);
     const newFilter = products.filter((product) => {
         return(
-        
-            product.category.toLowerCase().includes(searchWord.toLowerCase())
-        
             
+        
+            product.category.toLowerCase().includes(searchTerm.toLowerCase())
+
         )
     });
     setFilterData(newFilter);
-}   
+}
+
+
+
+
+
+
+
 
 
 
@@ -62,16 +94,28 @@ const handleCateFilter = (e) => {
 return (
     <>
     <div className='search-container'>
-        <Image className='img' src={logo} alt='logo' style={{height:"46px", width:"162px"}}/>
+        <Image className='img' src={logo} alt='logo'
+        style={{
+            marginTop:"20px",
+            height:"46px",
+            width:"162px"
+            }}
+
+            onClick={() => router.push("/")}
+            />
+
+
 
         <div className='search'>
+            
                         <div className='search-product'>
                             <div className='search-prod' > 
                                 <input 
+                                
                                 autoComplete={true}
                                 type="search"
                                 placeholder='Search Products...'
-                                onChange={handleCateFilter}
+                                onChange={handleProdFilter}
                                 />
                             </div >
                         
@@ -82,7 +126,7 @@ return (
 
                                 {filterData.map((val) => (
                                         
-                                        <li >{val.title.toLowerCase()}</li>
+                                        <li>{val.title}</li>
                                     
                                 ))}
                                 </ul>
@@ -105,12 +149,13 @@ return (
                         <div className='ul-list-cont'>
                             <ul className='ul-all-search'>
                                 {
-                                filterData?.map((cate) => {
+                                filterData.map((cate) => {
                                     
                                         return(
                                             
-
-                                                <li>{cate.category }</li>
+                                            // {category === category ? " " :  <li>{cate.category }</li>}
+                                            <li >{cate.category }</li>
+                                            
                                             
                                         )
                                     
@@ -127,7 +172,8 @@ return (
                     
                         
                         <button  className='search-btn'>Search</button>
-            </div> 
+                        
+        </div> 
             
 
 
@@ -136,27 +182,26 @@ return (
 
         <div className='icons'>
             <div className='a'>
-            <div className='abc'>
+            <div className='abc num'>
             <div className='number'>15</div>
             </div>
-            <ArrowPathIcon  className='icon'  />
+            <ArrowPathIcon  className='icon aero'  />
             </div>
 
             <div className='a'>
-            <div className='abc'>
-            <div className='number'>10</div>
+            <div className='abc num'>
+            <div className='number '>10</div>
             </div>
             
-            <HeartIcon className='icon'/>
+            <HeartIcon className='icon heart'/>
             </div>
 
-            <div className='a'>
-            <div className='abc'>
-            <div className='number'>15</div>
+            <div className='a shoppingIcon'  onClick={() => router.push("/cart/cart")}>
+            <div className='abc '>
+            <div className='number'>{items.length}</div>
             </div>
             
-            <ShoppingBagIcon className='icon'/>
-            
+            <ShoppingBagIcon className='icon shopping'/>
             </div>
             
             
@@ -167,9 +212,10 @@ return (
       
         
     </div>
-    <AllProduct filterData={filterData}  style={{backgroundColor:"red", position:"absolte"}}/>
+ {/* <AllProduct filterData={filterData}  style={{backgroundColor:"red"}}/>    */}
+ <Allproduct  filterData={filterData}/>
     </>
-
+      
     )
 }
 
